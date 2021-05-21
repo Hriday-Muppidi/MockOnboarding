@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="RootModule">
+    <File Path="node_modules\react\dist\react-with-addons.js" Url="node_modules/react/dist/react-with-addons.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\react\dist\react-with-addons.min.js" Url="node_modules/react/dist/react-with-addons.min.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\react\dist\react.js" Url="node_modules/react/dist/react.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\react\dist\react.min.js" Url="node_modules/react/dist/react.min.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\react-dom\dist\react-dom-server.js" Url="node_modules/react-dom/dist/react-dom-server.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\react-dom\dist\react-dom-server.min.js" Url="node_modules/react-dom/dist/react-dom-server.min.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\react-dom\dist\react-dom.js" Url="node_modules/react-dom/dist/react-dom.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\react-dom\dist\react-dom.min.js" Url="node_modules/react-dom/dist/react-dom.min.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\react-redux\dist\react-redux.js" Url="node_modules/react-redux/dist/react-redux.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\react-redux\dist\react-redux.min.js" Url="node_modules/react-redux/dist/react-redux.min.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\redux\dist\redux.js" Url="node_modules/redux/dist/redux.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\redux\dist\redux.min.js" Url="node_modules/redux/dist/redux.min.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\redux-immutable-state-invariant\dist\index.js" Url="node_modules/redux-immutable-state-invariant/dist/index.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\redux-immutable-state-invariant\dist\isImmutable.js" Url="node_modules/redux-immutable-state-invariant/dist/isImmutable.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\redux-immutable-state-invariant\dist\trackForMutations.js" Url="node_modules/redux-immutable-state-invariant/dist/trackForMutations.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\moment\min\locales.js" Url="node_modules/moment/min/locales.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\moment\min\locales.min.js" Url="node_modules/moment/min/locales.min.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\moment\min\moment-with-locales.js" Url="node_modules/moment/min/moment-with-locales.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\moment\min\moment-with-locales.min.js" Url="node_modules/moment/min/moment-with-locales.min.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\moment\min\moment.min.js" Url="node_modules/moment/min/moment.min.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\react-datepicker\dist\react-datepicker-cssmodules.css" Url="node_modules/react-datepicker/dist/react-datepicker-cssmodules.css" ReplaceContent="TRUE" />
+    <File Path="node_modules\react-datepicker\dist\react-datepicker-cssmodules.min.css" Url="node_modules/react-datepicker/dist/react-datepicker-cssmodules.min.css" ReplaceContent="TRUE" />
+    <File Path="node_modules\react-datepicker\dist\react-datepicker.js" Url="node_modules/react-datepicker/dist/react-datepicker.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\react-datepicker\dist\react-datepicker.min.css" Url="node_modules/react-datepicker/dist/react-datepicker.min.css" ReplaceContent="TRUE" />
+    <File Path="node_modules\react-datepicker\dist\react-datepicker.min.js" Url="node_modules/react-datepicker/dist/react-datepicker.min.js" ReplaceContent="TRUE" />
+    <File Path="node_modules\react-datepicker\dist\react-datepicker.css" Url="node_modules/react-datepicker/dist/react-datepicker.css" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Type="ElementManifest" />
+    <ProjectItemFile Source="node_modules\react\dist\react-with-addons.js" Target="node_modules\react\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\react\dist\react-with-addons.min.js" Target="node_modules\react\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\react\dist\react.js" Target="node_modules\react\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\react\dist\react.min.js" Target="node_modules\react\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\react-dom\dist\react-dom-server.js" Target="node_modules\react-dom\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\react-dom\dist\react-dom-server.min.js" Target="node_modules\react-dom\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\react-dom\dist\react-dom.js" Target="node_modules\react-dom\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\react-dom\dist\react-dom.min.js" Target="node_modules\react-dom\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\react-redux\dist\react-redux.js" Target="node_modules\react-redux\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\react-redux\dist\react-redux.min.js" Target="node_modules\react-redux\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\redux\dist\redux.js" Target="node_modules\redux\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\redux\dist\redux.min.js" Target="node_modules\redux\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\redux-immutable-state-invariant\dist\index.js" Target="node_modules\redux-immutable-state-invariant\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\redux-immutable-state-invariant\dist\isImmutable.js" Target="node_modules\redux-immutable-state-invariant\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\redux-immutable-state-invariant\dist\trackForMutations.js" Target="node_modules\redux-immutable-state-invariant\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\moment\min\locales.js" Target="node_modules\moment\min\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\moment\min\locales.min.js" Target="node_modules\moment\min\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\moment\min\moment-with-locales.js" Target="node_modules\moment\min\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\moment\min\moment-with-locales.min.js" Target="node_modules\moment\min\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\moment\min\moment.min.js" Target="node_modules\moment\min\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\react-datepicker\dist\react-datepicker-cssmodules.css" Target="node_modules\react-datepicker\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\react-datepicker\dist\react-datepicker-cssmodules.min.css" Target="node_modules\react-datepicker\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\react-datepicker\dist\react-datepicker.js" Target="node_modules\react-datepicker\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\react-datepicker\dist\react-datepicker.min.css" Target="node_modules\react-datepicker\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\react-datepicker\dist\react-datepicker.min.js" Target="node_modules\react-datepicker\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="node_modules\react-datepicker\dist\react-datepicker.css" Target="node_modules\react-datepicker\dist\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

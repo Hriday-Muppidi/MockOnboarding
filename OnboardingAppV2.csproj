@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A1BE08F-AC26-4745-8BD0-8CEC2EE58E9B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnboardingApp</RootNamespace>
+    <AssemblyName>OnboardingApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{0190862f-9c23-4d94-8156-1cd2d82710bb}</AppFeaturePartId>
+    <WspPartId>{a7b54870-57cf-4fb6-8ef1-3c0c78f1c84f}</WspPartId>
+    <WorkflowPartId>{090cf847-da30-4955-acfd-d1ab698b5210}</WorkflowPartId>
+    <CspkgPartId>{839d090d-f92c-4583-82a6-3fe26355b9dd}</CspkgPartId>
+    <SqlPackagePartId>{6c579088-f6b0-482b-858b-8e1530abed9f}</SqlPackagePartId>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Content\Admin.css">
+      <DependentUpon>Admin.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Admin.min.css">
+      <DependentUpon>Admin.css</DependentUpon>
+    </Content>
+    <Content Include="Content\App.css">
+      <DependentUpon>App.less</DependentUpon>
+    </Content>
+    <Content Include="Content\App.min.css">
+      <DependentUpon>App.css</DependentUpon>
+    </Content>
+    <Content Include="Content\AppLicense.css" />
+    <Content Include="Content\bootstrap-3.3.7\css\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-3.3.7\css\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap-3.3.7\css\bootstrap.css" />
+    <Content Include="Content\bootstrap-3.3.7\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\bootstrap-3.3.7\js\bootstrap.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\bootstrap.min.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\npm.js" />
+    <Content Include="Content\checkboxRadioBtn.css" />
+    <Content Include="Content\common.css">
+      <DependentUpon>common.less</DependentUpon>
+    </Content>
+    <Content Include="Content\common.min.css">
+      <DependentUpon>common.css</DependentUpon>
+    </Content>
+    <Content Include="Content\IEResolver.css" />
+    <Content Include="Content\images\close.png" />
+    <Content Include="Content\images\loading.gif" />
+    <Content Include="Content\images\search.png" />
+    <Content Include="Content\images\user.jpg" />
+    <Content Include="Content\UserRequest.css" />
+    <Content Include="Images\admin_user_guide.png" />
+    <Content Include="Images\AppIcon.png" />
+    <Content Include="Images\arrows.png" />
+    <Content Include="Images\backbutton.png" />
+    <Content Include="Images\delete_icon.png" />
+    <Content Include="Images\download.png" />
+    <Content Include="Images\edit_Active.png" />
+    <Content Include="Images\employeeOnBoarding_logo.jpg">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\emponboardLogo.jpg" />
+    <Content Include="Images\help_icon.png" />
+    <Content Include="Images\Manage-app-configurations.png" />
+    <Content Include="Images\onboard.jpg" />
+    <Content Include="Images\saketa-loading.gif" />
+    <Content Include="Images\saketa-logo-white.png" />
+    <Content Include="Images\saketalogocut.png" />
+    <Content Include="Images\saketa_logo.png" />
+    <Content Include="Images\saketa_logo_footer.png" />
+    <Content Include="Images\security.png" />
+    <Content Include="Images\sendAnEmail.png" />
+    <Content Include="Images\settings.png" />
+    <Content Include="node_modules\moment\min\locales.js" />
+    <Content Include="node_modules\moment\min\locales.min.js" />
+    <Content Include="node_modules\moment\min\moment-with-locales.js" />
+    <Content Include="node_modules\moment\min\moment-with-locales.min.js" />
+    <Content Include="node_modules\moment\min\moment.min.js" />
+    <Content Include="node_modules\react-datepicker\dist\react-datepicker-cssmodules.css" />
+    <Content Include="node_modules\react-datepicker\dist\react-datepicker-cssmodules.min.css" />
+    <Content Include="node_modules\react-datepicker\dist\react-datepicker.css" />
+    <Content Include="node_modules\react-datepicker\dist\react-datepicker.js" />
+    <Content Include="node_modules\react-datepicker\dist\react-datepicker.min.css" />
+    <Content Include="node_modules\react-datepicker\dist\react-datepicker.min.js" />
+    <Content Include="node_modules\react-dom\dist\react-dom-server.js" />
+    <Content Include="node_modules\react-dom\dist\react-dom-server.min.js" />
+    <Content Include="node_modules\react-dom\dist\react-dom.js" />
+    <Content Include="node_modules\react-dom\dist\react-dom.min.js" />
+    <Content Include="node_modules\react-redux\dist\react-redux.js" />
+    <Content Include="node_modules\react-redux\dist\react-redux.min.js" />
+    <Content Include="node_modules\react\dist\react-with-addons.js" />
+    <Content Include="node_modules\react\dist\react-with-addons.min.js" />
+    <Content Include="node_modules\react\dist\react.js" />
+    <Content Include="node_modules\react\dist\react.min.js" />
+    <Content Include="node_modules\redux-immutable-state-invariant\dist\index.js" />
+    <Content Include="node_modules\redux-immutable-state-invariant\dist\isImmutable.js" />
+    <Content Include="node_modules\redux-immutable-state-invariant\dist\trackForMutations.js" />
+    <Content Include="node_modules\redux\dist\redux.js" />
+    <Content Include="node_modules\redux\dist\redux.min.js" />
+    <Content Include="Pages\Admin.aspx" />
+    <Content Include="Pages\AppLicense.aspx" />
+    <Content Include="Pages\Default.aspx" />
+    <Content Include="Pages\Employee.aspx" />
+    <Content Include="Pages\Home.aspx" />
+    <Content Include="Pages\UserAccountRequestAccept.aspx" />
+    <Content Include="Scripts\aes.js" />
+    <Content Include="Scripts\bootstrap-notify.min.js" />
+    <Content Include="Scripts\dist\adminBundle.js" />
+    <Content Include="Scripts\dist\adminBundle.min.js">
+      <DependentUpon>adminBundle.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\dist\bundle.js" />
+    <Content Include="Scripts\dist\bundle.min.js">
+      <DependentUpon>bundle.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\dist\fetchPolyfills.js" />
+    <Content Include="Scripts\dist\homeBundle.js" />
+    <Content Include="Scripts\dist\homeBundle.min.js">
+      <DependentUpon>homeBundle.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\dist\objectAssignPolyfill.js" />
+    <Content Include="Scripts\dist\userRequest.js" />
+    <Content Include="Scripts\dist\userRequest.min.js">
+      <DependentUpon>userRequest.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="Scripts\jquery.cookie.min.js" />
+    <Content Include="Scripts\jquery.SPServices-0.7.1a.min.js" />
+    <Content Include="Scripts\jQuery.xml2json.min.js" />
+    <Content Include="Scripts\License.min.js" />
+    <Content Include="Scripts\License\ActivateController.js" />
+    <Content Include="Scripts\License\ActivateController.min.js">
+      <DependentUpon>ActivateController.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\License\LicenseManager.js" />
+    <Content Include="Scripts\License\LicenseManager.min.js">
+      <DependentUpon>LicenseManager.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\pbkdf2.js" />
+    <Content Include="Scripts\polyfills\array-polyfill.js" />
+    <Content Include="Scripts\polyfills\IEPolyfill.js" />
+    <Content Include="Scripts\polyfills\promise.min.js" />
+    <Content Include="Scripts\react-onclickoutside.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Templates\AppImages\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Elements.xml" />
+    <Content Include="Templates\AppSettings\Elements.xml" />
+    <Content Include="Templates\AppSettings\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\AppSettings\SiteSettingsInstance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\AssignedBoardingCheckList\AssignedBoardingCheckListInstance\Elements.xml" />
+    <Content Include="Templates\AssignedBoardingCheckList\Elements.xml" />
+    <Content Include="Templates\AssignedBoardingCheckList\Schema.xml" />
+    <Content Include="Templates\resources\Elements.xml" />
+    <Content Include="Templates\resources\resourcesInstance\Elements.xml" />
+    <Content Include="Templates\resources\Schema.xml" />
+    <Content Include="Templates\SystemSetupDetails\Elements.xml" />
+    <Content Include="Templates\SystemSetupDetails\Schema.xml" />
+    <Content Include="Templates\SystemSetupDetails\SystemSetupDetailsInstance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="TypeScripts\Elements.xml" />
+    <Content Include="webpack.config.js" />
+    <None Include="bundleconfig.json" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <None Include="Content\Admin.less" />
+    <None Include="Content\App.less" />
+    <None Include="Content\bootstrap-3.3.7\css\bootstrap-theme.css.map" />
+    <None Include="Content\bootstrap-3.3.7\css\bootstrap-theme.min.css.map" />
+    <None Include="Content\bootstrap-3.3.7\css\bootstrap.css.map" />
+    <None Include="Content\bootstrap-3.3.7\css\bootstrap.min.css.map" />
+    <None Include="Content\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Content\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Content\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Content\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Content\common.less" />
+    <None Include="package.json" />
+    <None Include="Scripts\jquery-3.1.1.min.map" />
+    <None Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <None Include="Templates\ADGroups\ADGroupsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{81fc1dc4-7e83-4bce-8d98-343d0d33756a}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\ADGroups\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{27f488fe-3f07-4133-8e3f-cce5da664466}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\AppImages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b71563e3-0a9b-48ff-9ced-6ce081936ae9}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\AssignedBoardingCheckList\AssignedBoardingCheckListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8c3b2751-4743-444c-b119-51e62984337e}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\AssignedBoardingCheckList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{78c914e3-807f-4ec3-b56c-52d54f1a16b8}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\BoardingChecklists\BoardingChecklistsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0ac6e178-3cc4-4606-9ec9-40eb5d1fb49f}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\BoardingChecklists\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e2596d0c-b9a9-4faa-bb4c-a16aa1a5b1fd}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\BoardingSections\BoardingSectionsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ea950006-869e-45d2-97bf-7ee7c5e1c202}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\BoardingSections\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9fbc3a23-883d-47c7-8539-9c5b124530f4}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\EmailTemplates\EmailTemplatesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f207c736-fc19-4c1f-b4a8-24f266b271fe}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\EmailTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fb8fb24e-a46b-4f77-9823-6843ed0d9b8c}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\EmployeeDepartments\DepartmentInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b2526d64-1a51-45b5-9e33-977dfe786f80}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\EmployeeDepartments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0ab02e81-ff9f-414a-a886-4768e705a598}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\EmployeeDetails\EmployeeDetailsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0f7266b6-1f90-4424-89a7-1eda9c150657}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\EmployeeDetails\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f65bb1b1-7866-4a36-9f2c-5206171c2572}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\EmployeeType\EmployeeTypeInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3fb45009-1d60-401a-af28-4183017b611f}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\EmployeeType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5ed7ad61-eeec-47c5-a94a-9122eb45f8c9}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\EmplyeeRoles\RolesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7d72b8bc-02dc-4535-ba42-c3740432fcc3}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\EmplyeeRoles\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ec40a937-a880-4593-85c7-369eb890dce7}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a7ac159e-d0c9-4c58-93fc-93b87499a092}</SharePointProjectItemId>
+    </None>
+    <Content Include="Templates\ADGroups\ADGroupsInstance\Elements.xml" />
+    <Content Include="Templates\ADGroups\Elements.xml" />
+    <Content Include="Templates\ADGroups\Schema.xml" />
+    <Content Include="Templates\BoardingChecklists\BoardingChecklistsInstance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\BoardingChecklists\Elements.xml" />
+    <Content Include="Templates\BoardingChecklists\Schema.xml" />
+    <Content Include="Templates\BoardingSections\BoardingSectionsInstance\Elements.xml" />
+    <Content Include="Templates\BoardingSections\Elements.xml" />
+    <Content Include="Templates\BoardingSections\Schema.xml" />
+    <Content Include="Templates\EmailTemplates\Elements.xml" />
+    <Content Include="Templates\EmailTemplates\EmailTemplatesInstance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\EmailTemplates\Schema.xml" />
+    <Content Include="Templates\EmployeeDepartments\DepartmentInstance\Elements.xml" />
+    <Content Include="Templates\EmployeeDepartments\Elements.xml" />
+    <Content Include="Templates\EmployeeDepartments\Schema.xml" />
+    <Content Include="Templates\EmployeeDetails\Elements.xml" />
+    <Content Include="Templates\EmployeeDetails\EmployeeDetailsInstance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\EmployeeDetails\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\EmployeeType\Elements.xml" />
+    <Content Include="Templates\EmployeeType\EmployeeTypeInstance\Elements.xml" />
+    <Content Include="Templates\EmployeeType\Schema.xml" />
+    <Content Include="Templates\EmplyeeRoles\Elements.xml" />
+    <Content Include="Templates\EmplyeeRoles\RolesInstance\Elements.xml" />
+    <Content Include="Templates\EmplyeeRoles\Schema.xml" />
+    <Content Include="Pages\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Templates\AppSettings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{755a228e-1fb9-4084-90ce-84824101d244}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\AppSettings\SiteSettingsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d850d4ae-3543-452f-97c9-851df5cc1379}</SharePointProjectItemId>
+    </None>
+    <None Include="SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e43426e0-0758-42df-a2fe-3f66e1c68e78}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\resources\resourcesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{60e643b5-7a61-4687-9492-13410700f007}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\resources\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{97c5b3e3-ee1a-4eec-8d40-a9d9bf0f5385}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\SystemSetupDetails\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0d8d2872-e41b-4485-90c7-0b85d4c4dbdf}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\SystemSetupDetails\SystemSetupDetailsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3f4f264f-d916-4fad-bf29-aa74305a9e6c}</SharePointProjectItemId>
+    </None>
+    <None Include="tsconfig.json" />
+    <None Include="TypeScripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c8baab87-d56c-4884-8881-b62cd9b33fd1}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6c579088-f6b0-482b-858b-8e1530abed9f}</SharePointProjectItemId>
+    </None>
+    <Content Include="Scripts\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\jquery-1.11.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery.cookie.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0bc797e9-d30f-4f8e-9f4e-45cbded06978}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7205b116-27c1-4a9a-bc55-8c5cf4ad5db6}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{0a4db261-7f89-4e3a-a613-b023397311d7}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{9a46716b-0d46-4a8a-a55a-7bcfc8208822}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Client.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="TypeScripts\AppConfig.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\actions\Admin\ADGroupActions.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\actions\Admin\BoardingSectionActions.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\actions\Admin\CheckListActivityActions.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\actions\Admin\DepartmentActions.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\actions\Admin\EmployeeRoleActions.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\actions\Admin\EmployeeTypeActions.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\actions\Admin\SystemSetupActions.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\actions\AppConfiguration\GroupsActions.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\actions\Onboarding\AppSettingActions.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\actions\Onboarding\AssignedBoardingSectionActions.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\actions\Onboarding\OnBoardingEmpActions.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\actions\RootActions.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\actions\UtilityActions.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\ActionTypes.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\AdminApp.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\App.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\AppRoutes.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\AppState.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\AppStore.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Admin\ADGroupComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Admin\AdminComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Admin\AppConfigComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Admin\AppImagesComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Admin\AppSettingComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Admin\CheckListActivityItemFormComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Admin\CheckListActivityItemsComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Admin\EmpDeptComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Admin\EmployeeConfigComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Admin\EmpRoleComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Admin\EmpTypeComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Admin\GeneralConfigComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Admin\OnBoardingAppConfigComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Admin\SystemSetupItemsComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Admin\UpdateLegacyDataComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\AppConfiguration\AddAppGroupsComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Common\BaseGridComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Common\CustomRequiredFieldValidator.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Common\DropDownComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Common\GlobalLoadingComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Common\PeoplePickerComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Common\SaketaModalPopUp.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Common\SaketaTypeAhead.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Common\ShowLegacyDataInfo.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\CurrentUserComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\HeaderComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Onboarding\AssignCheckListComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Onboarding\CheckListOpsComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Onboarding\EditOnBoardingEmpComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Onboarding\EmployeeDetailsComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Onboarding\HomeComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Onboarding\HomePageComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Onboarding\InitiateWorkSpaceSetupComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Onboarding\InitiationForm.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Onboarding\InitiationFormWizardComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Onboarding\ITAdminTasksComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Onboarding\OnBoardingEmpReportComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Onboarding\OnBoardingEmpsComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Onboarding\OnJoiningComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Onboarding\PostJoiningComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Onboarding\PostJoiningUserVerificationComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Onboarding\PreJoiningComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Onboarding\RMApprovalComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Onboarding\UnAuthorisedAccessComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\Onboarding\UpdateAssignedCheckListComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\components\RootComponent.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\HomeApp.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\reducers\Admin\ADGroupReducer.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\reducers\Admin\BoardingSectionReducer.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\reducers\Admin\CheckListActivityReducer.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\reducers\Admin\DepartmentReducer.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\reducers\Admin\EmployeeRoleReducer.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\reducers\Admin\EmployeeTypeReducer.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\reducers\Admin\SystemSetupItemReducer.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\reducers\AppConfiguration\GroupsReducer.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\reducers\Onboarding\AppSettingsReducer.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\reducers\Onboarding\AssignedBoardingSectionReducer.tsx" />
+    <TypeScriptCompile Include="TypeScripts\app\reducers\Onboarding\OnBoardingEmpReducer.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\reducers\RootReducer.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\reducers\UtilityReducer.ts" />
+    <TypeScriptCompile Include="TypeScripts\app\UserRequestApp.tsx" />
+    <TypeScriptCompile Include="TypeScripts\Interfaces\IAppService.ts" />
+    <TypeScriptCompile Include="TypeScripts\Mappers\DataModelMappers.ts" />
+    <TypeScriptCompile Include="TypeScripts\Mappers\ViewModelMappers.ts" />
+    <TypeScriptCompile Include="TypeScripts\Models\OnBoardingDataModels.ts" />
+    <TypeScriptCompile Include="TypeScripts\Models\OnBoardingEnums.ts" />
+    <TypeScriptCompile Include="TypeScripts\Models\OnBoardingModels.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\ADGroupService.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\AppService.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\AssignBoardingSectionService.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\BaseService.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\BoardingSectionService.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\CheckListActivityService.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\DepartmentService.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\EmailService.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\EmployeeRoleService.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\EmployeeTypeService.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\NotificationService.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\OnBoardingEmployeeService.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\PermissionService.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\SystemSetupDetailsService.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\UpdateLegacyDataService.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\UtilService.ts" />
+    <TypeScriptCompile Include="TypeScripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="TypeScripts\typings\license\license.d.ts" />
+    <TypeScriptCompile Include="TypeScripts\typings\microsoft-ajax\microsoft.ajax.d.ts" />
+    <TypeScriptCompile Include="TypeScripts\typings\sharepoint\SharePoint.d.ts" />
+    <TypeScriptCompile Include="TypeScripts\_references .ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="..\packages\BuildBundlerMinifier.2.8.391\build\BuildBundlerMinifier.targets" Condition="Exists('..\packages\BuildBundlerMinifier.2.8.391\build\BuildBundlerMinifier.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\BuildBundlerMinifier.2.8.391\build\BuildBundlerMinifier.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\BuildBundlerMinifier.2.8.391\build\BuildBundlerMinifier.targets'))" />
+  </Target>
+</Project>

@@ -1,0 +1,40 @@
+{
+  "name": "saketa-on-boarding",
+  "version": "1.0.0",
+  "description": "saketa on boarding application",
+  "main": "App.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saketa",
+  "license": "ISC",
+  "dependencies": {
+    "@microsoft/sp-lodash-subset": "^1.11.0",
+    "@types/history": "^4.5.0",
+    "@types/node": "^14.14.31",
+    "@types/react": "^15.0.9",
+    "@types/react-datepicker": "^0.52.2",
+    "@types/react-dom": "^0.14.23",
+    "@types/react-redux": "^4.4.36",
+    "@types/react-router": "^3.0.3",
+    "@types/redux": "^3.6.0",
+    "@types/redux-immutable-state-invariant": "^1.2.30",
+    "es6-object-assign": "^1.1.0",
+    "history": "^4.5.1",
+    "moment": "^2.18.1",
+    "react": "^15.4.2",
+    "react-datepicker": "^0.54.0",
+    "react-dom": "^15.4.2",
+    "react-onclickoutside": "^6.5.0",
+    "react-redux": "^5.0.2",
+    "react-router": "^3.0.2",
+    "redux": "^3.6.0",
+    "redux-immutable-state-invariant": "^1.2.4",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.0.4-rc.2",
+    "source-map-loader": "^0.1.6",
+    "typescript": "^2.1.6"
+  }
+}

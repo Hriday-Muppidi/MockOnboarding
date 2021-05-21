@@ -1,0 +1,38 @@
+[
+  {
+    "outputFileName": "Scripts/License/LicenseManager.min.js",
+    "inputFiles": [
+      "Scripts/License/LicenseManager.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/License/ActivateController.min.js",
+    "inputFiles": [
+      "Scripts/License/ActivateController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/dist/adminBundle.min.js",
+    "inputFiles": [
+      "Scripts/dist/adminBundle.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/dist/bundle.min.js",
+    "inputFiles": [
+      "Scripts/dist/bundle.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/dist/homeBundle.min.js",
+    "inputFiles": [
+      "Scripts/dist/homeBundle.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/dist/userRequest.min.js",
+    "inputFiles": [
+      "Scripts/dist/userRequest.js"
+    ]
+  }
+]
